@@ -10,7 +10,17 @@ namespace TimeLib
         public byte Seconds {get;}
 
 
+        public Time(long seconds)
+        {
+            byte _hours = Convert.ToByte(seconds/3600);
+            byte _minutes = Convert.ToByte((seconds/60)%60);
+            byte _seconds = Convert.ToByte(seconds%60);
 
+            constructorExceptions(_hours,_minutes,_seconds);
+            Hours = _hours;
+            Minutes = _minutes;
+            Seconds = _seconds;
+        }
         public Time(byte hours = 0, byte minutes = 0, byte seconds = 0)
         {  
             constructorExceptions(hours,minutes,seconds);
@@ -18,17 +28,6 @@ namespace TimeLib
             Minutes = minutes;
             Seconds = seconds;
         }
-        // public Time(int _hours = 0, int _minutes = 0, int _seconds = 0)
-        // {
-        //     byte hours = byte.Parse($"{_hours}");
-        //     byte minutes = byte.Parse($"{_minutes}");
-        //     byte seconds = byte.Parse($"{_seconds}");
-
-        //     constructorExceptions(hours,minutes,seconds);
-        //     Hours = hours;
-        //     Minutes = minutes;
-        //     Seconds = seconds;
-        // }
         public Time(string TimeString) //konstruktor dla wartości podanych w string "hh:mm:ss"
         {
             string[] TimeValueBufor = TimeString.Split(':');
@@ -47,15 +46,17 @@ namespace TimeLib
         }
 
 
-        public override string ToString() => $"{Hours.ToString("X2")}:{Minutes.ToString("X2")}:{Seconds.ToString("X2")}";
+        public override string ToString() => $"{Hours.ToString("D2")}:{Minutes.ToString("D2")}:{Seconds.ToString("D2")}";
 
         public override bool Equals(object obj)
         {
+            if(GetType() == obj.GetType())
+                return false;
             return this.Equals(obj);
         }
         public bool Equals(Time time)
         {
-            if (time != null || GetType() == time.GetType())
+            if (time != null)
             {
                 if(this.GetHashCode()==time.GetHashCode())
                     return true;
@@ -95,14 +96,14 @@ namespace TimeLib
             return true;
         }
 
-        public static Time operator +(Time a, Time b)
+        public static Time Plus(Time a, Time b)
         {
             int sec = a.Seconds+b.Seconds;
             int min = a.Minutes+b.Minutes+(sec/60);
             int h = a.Hours+b.Hours+(min/60);
             return new Time(Convert.ToByte(h%24),Convert.ToByte(min%60),Convert.ToByte(sec%60));
         }
-        public static Time operator -(Time a, Time b)
+        public static Time Minus(Time a, Time b)
         {
             int h = a.Hours-b.Hours;
             int min = a.Minutes-b.Minutes;
@@ -113,6 +114,11 @@ namespace TimeLib
                 else {min--; sec = 60+sec;}
             return new Time(Convert.ToByte(h%24),Convert.ToByte(min%60),Convert.ToByte(sec%60));
         }
+        public static Time Plus(Time a, TimePeriod b) => Plus(a, new Time(b.seconds));
+        public Time Plus(TimePeriod a) => Plus(this, a);
+
+        public static Time operator +(Time a, Time b) => Plus(a,b);
+        public static Time operator -(Time a, Time b) => Minus(a,b);
 
     }
 }
