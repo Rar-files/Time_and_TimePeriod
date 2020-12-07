@@ -1,0 +1,9 @@
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\bin\Debug\netstandard2.0\TimeLib.deps.json
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\bin\Debug\netstandard2.0\TimeLib.dll
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\bin\Debug\netstandard2.0\TimeLib.pdb
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.csprojAssemblyReference.cache
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.AssemblyInfoInputs.cache
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.AssemblyInfo.cs
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.csproj.CoreCompileInputs.cache
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.dll
+C:\Users\dwidl\source\repos\C#Lab_2rok\Time_and_TimePeriod\TimeLib\obj\Debug\netstandard2.0\TimeLib.pdb
