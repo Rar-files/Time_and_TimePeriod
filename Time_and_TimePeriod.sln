@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLib", "TimeLib\TimeLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{FA1DE6A5-EE91-49A1-8998-CD6DFE2FF796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLibTest", "TimeLibTest\TimeLibTest.csproj", "{A8D17158-D37E-4617-9A90-B5C5B0309D84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{FA1DE6A5-EE91-49A1-8998-CD6DFE2FF796}.Release|x64.Build.0 = Release|Any CPU
 		{FA1DE6A5-EE91-49A1-8998-CD6DFE2FF796}.Release|x86.ActiveCfg = Release|Any CPU
 		{FA1DE6A5-EE91-49A1-8998-CD6DFE2FF796}.Release|x86.Build.0 = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|x64.Build.0 = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Debug|x86.Build.0 = Debug|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|x64.ActiveCfg = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|x64.Build.0 = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|x86.ActiveCfg = Release|Any CPU
+		{A8D17158-D37E-4617-9A90-B5C5B0309D84}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
